@@ -43,7 +43,7 @@ var config = {
 			url: 'https://calendar.google.com/calendar/ical/en.australian%23holiday%40group.v.calendar.google.com/public/basic.ics'
 		},
 		{
-			symbol: 'soccer-ball-o',
+			symbol: 'venus-mars',
 			url: 'https://calendar.google.com/calendar/ical/qs6puudnt5s8qeulcq04puf57k%40group.calendar.google.com/private-b9ad4381170374b9dfd6324895c6ac20/basic.ics',
 		},
 		// {
