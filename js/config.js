@@ -1,5 +1,5 @@
 var config = {
-    lang: 'nl',
+    lang: 'en',
     time: {
         timeFormat: 12
     },
@@ -7,11 +7,11 @@ var config = {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
+            q: 'Sydney,Australia',
             units: 'metric',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'en',
+            APPID: '7708a5b8910a145678917f8ae3002046'
         }
     },
     compliments: {
@@ -44,7 +44,7 @@ var config = {
 		},
 		{
 			symbol: 'soccer-ball-o',
-			url: 'https://www.google.com/calendar/ical/akvbisn5iha43idv0ktdalnor4%40group.calendar.google.com/public/basic.ics',
+			url: 'https://calendar.google.com/calendar/ical/qs6puudnt5s8qeulcq04puf57k%40group.calendar.google.com/private-b9ad4381170374b9dfd6324895c6ac20/basic.ics',
 		},
 		// {
 			// symbol: 'mars',
@@ -61,6 +61,6 @@ var config = {
 		]
     },
     news: {
-        feed: 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml'
+        feed: 'http://feeds.news.com.au/public/rss/2.0/news_national_3354.xml'
     }
 }
