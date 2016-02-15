@@ -21,10 +21,10 @@ function processData(allText) {
                 tarr.push(headers[j]+":"+data[j]);
             }
             lines.push(tarr);
-        }
+        } comt.push(lines);
     } 
-comt.push(lines);
-} 
+
+}  
      alert(comt);
 var compliments = {
 	complimentLocation: '.compliment',
