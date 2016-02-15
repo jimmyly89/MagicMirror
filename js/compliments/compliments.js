@@ -1,5 +1,5 @@
 var $ = jQuery = require('jquery');
-require('./jquery.csv.js');
+require('./jquerycsv/jquery.csv.js');
 
 $(document).ready(function() {
     $.ajax({
