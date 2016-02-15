@@ -7,11 +7,12 @@ $(document).ready(function() {
      });
 });
 
-var lines = []
+var comm = [];
+
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
-    //var lines = [];
+    var lines = [];
 
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
@@ -24,9 +25,9 @@ function processData(allText) {
             lines.push(tarr);
         } 
     } 
-
+            comm.push(lines);
 }  
-   alert(lines);  
+   alert(comm);  
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
