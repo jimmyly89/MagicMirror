@@ -27,6 +27,8 @@ function processData(allText) {
     } 
 
 }  
+var msg = processData(allText); //myprofile === profile
+alert(msg)
    
 var compliments = {
 	complimentLocation: '.compliment',
