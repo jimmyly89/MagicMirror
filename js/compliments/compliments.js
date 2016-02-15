@@ -6,7 +6,7 @@ $(document).ready(function() {
         success: function(data) {processData(data);}
      });
 });
-var lines
+var comt
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
@@ -23,9 +23,9 @@ function processData(allText) {
             lines.push(tarr);
         }
     }
-
+compt.push(lines);
 }
-     alert(lines);
+     alert(compt);
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
