@@ -23,9 +23,9 @@ function processData(allText) {
                 tarr.push(headers[j]+":"+data[j]);
             }
             lines.push(tarr);
-        } 
+        }  return comm;
     } 
-return comm;
+
 }  
 
       alert(comm);  
