@@ -1,6 +1,3 @@
-var $ = jQuery = require('jquery');
-require('./jquerycsv/jquery.csv.js');
-
 $(document).ready(function() {
     $.ajax({
         type: "GET",
