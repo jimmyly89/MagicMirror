@@ -13,7 +13,7 @@ function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
     var lines = [];
-    return lines;
+
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
         if (data.length == headers.length) {
@@ -25,7 +25,7 @@ function processData(allText) {
             lines.push(tarr);
         }  
     } 
-
+    return lines;
 }  
 var msg = processData(allText); //myprofile === profile
 alert(msg)
