@@ -25,7 +25,7 @@ function processData(allText) {
             lines.push(tarr);
         }  
     } 
-      alert(data);  
+      alert(headers);  
 }  
 
 
