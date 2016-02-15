@@ -1,3 +1,12 @@
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "compliments.txt",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
+
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
