@@ -30,6 +30,7 @@
 <script src="js/rrule.js"></script>
 <script src="js/version/version.js"></script>
 <script src="js/calendar/calendar.js"></script>
+<script src="jquerycsv/jquery-csv.js"></script>
 <script src="js/compliments/compliments.js"></script>
 <script src="js/weather/weather.js"></script>
 <script src="js/time/time.js"></script>
