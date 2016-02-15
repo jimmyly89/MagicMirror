@@ -27,7 +27,7 @@ return(lines);
     } 
 
 }  
-
+alert(data);
    
 var compliments = {
 	complimentLocation: '.compliment',
