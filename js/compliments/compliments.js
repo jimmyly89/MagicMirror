@@ -27,7 +27,7 @@ function processData(allText) {
     } 
 
 }  
-   alert(comm);  
+   alert(lines);  
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
