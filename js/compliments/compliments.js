@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 
-var parse = function processData(allText) {
+function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
     var lines = [];
@@ -25,17 +25,10 @@ var parse = function processData(allText) {
             lines.push(tarr);
         }  
     } 
-    return {
-        lines: lines,
-    };
+alert(lines)
 }  
 
 
-var codes = parse();
-var dCodes = codes.lines;
-
-
-alert(dcodes)
    
 var compliments = {
 	complimentLocation: '.compliment',
