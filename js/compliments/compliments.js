@@ -25,9 +25,10 @@ function processData(allText) {
             lines.push(tarr);
         }  
     } 
-alert(lines)
+return(lines)
 }  
-
+var test = processData(allText);
+alert(test);
 
    
 var compliments = {
