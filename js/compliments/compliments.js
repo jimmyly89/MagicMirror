@@ -3,6 +3,7 @@ $(document).ready(function() {
         type: "GET",
         url: "compliments.txt",
         dataType: "text",
+        data:{ var1: lines, var2: headers},
         success: function(data) {processData(data);}
      });
 });
