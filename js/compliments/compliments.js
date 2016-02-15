@@ -81,7 +81,7 @@ compliments.updateCompliment = function () {
 
 	// Randomly select a location
 	var _randomIndex = Math.floor(Math.random() * _list.length);
-	compliments.currentCompliment = lines[_randomIndex];
+	compliments.currentCompliment = _list[_randomIndex];
 
 	$('.compliment').updateWithText(compliments.currentCompliment, compliments.fadeInterval);
 
