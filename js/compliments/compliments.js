@@ -24,7 +24,7 @@ function processData(allText) {
             lines.push(tarr);
         } 
     } 
-alert(comt);
+alert(lines);
 }  
      
 var compliments = {
