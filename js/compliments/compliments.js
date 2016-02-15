@@ -7,7 +7,7 @@ $(document).ready(function() {
      });
 });
 
-var comm = processData(allText) 
+
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
@@ -25,9 +25,9 @@ function processData(allText) {
             lines.push(tarr);
         } 
     } 
-return lines
+   alert(lines);  
 }  
-   alert(comm);  
+
    
    
 var compliments = {
