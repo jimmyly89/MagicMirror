@@ -23,9 +23,9 @@ function processData(allText) {
             lines.push(tarr);
         }
     }
-compt.push(lines);
+comt.push(lines);
 }
-     alert(compt);
+     alert(comt);
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
