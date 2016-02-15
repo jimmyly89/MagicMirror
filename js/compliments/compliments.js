@@ -25,12 +25,15 @@ var parse = function processData(allText) {
             lines.push(tarr);
         }  
     } 
-      return [lines, headers, allTextLines];
+    return {
+        lines: lines,
+    };
 }  
 
+
 var codes = parse();
-var dCodes = codes[0];
-var dCodes2 = codes[1];
+var dCodes = codes.lines;
+
 
 alert(dcodes)
    
