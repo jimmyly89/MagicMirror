@@ -6,11 +6,11 @@ $(document).ready(function() {
         success: function(data) {processData(data);}
      });
 });
-
+var lines
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
-    gsd lines = [];
+    var lines = [];
 
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
