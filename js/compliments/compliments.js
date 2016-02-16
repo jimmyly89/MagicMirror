@@ -7,16 +7,30 @@ $(document).ready(function() {
      });
 });
 
-var allTextLines = [];
-allTextLines = allText.split(/\r\n|\n/);
-
-var fldHeading = []
-fldHeading = allTextLines[0].split(',');
-
-var fldData = []
-fldData = allTextLines[x].split(',');
-
-alert(fldData)
+        var allText =[];
+	var allTextLines = [];
+	var Lines = [];
+	var txtFile = new XMLHttpRequest();
+	
+	txtFile.open("GET", "compliments.txt", true);
+	allText = txtFile.responseText;
+	//allTextLines = allText.split(/\r\n|\n/);
+	//alert(allTextLines);
+	txtFile.onreadystatechange = function()
+	{
+		if (txtFile.readyState == 4)
+		{
+			
+				  // Makes sure it's found the file.
+    				allText = txtFile.responseText;
+					allTextLines = allText.split(/\r\n|\n/);
+				
+					document.write(allText);
+				} else { //alert("Didn't work"); 
+				}
+		
+		}
+	txtFile.send(null)
    
 var compliments = {
 	complimentLocation: '.compliment',
