@@ -7,15 +7,16 @@ $(document).ready(function() {
      });
 });
 
-function processData(alltext) {
-    var allTextLines = allText.split(/\r\n|\n/);
-    var lines = [];
-    for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(',');
-        lines.push(data)  }
-        alert(lines)
-    } 
+var allTextLines = [];
+allTextLines = allText.split(/\r\n|\n/);
 
+var fldHeading = []
+fldHeading = allTextLines[0].split(',');
+
+var fldData = []
+fldData = allTextLines[x].split(',');
+
+alert(fldData)
    
 var compliments = {
 	complimentLocation: '.compliment',
