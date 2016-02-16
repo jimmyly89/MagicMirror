@@ -18,11 +18,11 @@ function myFunction(a, b) {
 }
 alert(x)
 
-    var lines = [];
-function processData(alltext) {
+
+var t = function processData(alltext) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
-
+    var lines = [];
 
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
@@ -34,9 +34,10 @@ function processData(alltext) {
             }
             lines.push(tarr);
         }  
-    } 
+    } return lines
 }  
 
+alert(t)
    
 var compliments = {
 	complimentLocation: '.compliment',
