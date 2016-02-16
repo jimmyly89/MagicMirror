@@ -30,7 +30,6 @@ $(document).ready(function() {
 				}
 		
 		}
-	txtFile.send(null)
    
 var compliments = {
 	complimentLocation: '.compliment',
