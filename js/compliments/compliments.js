@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 
-function processData(allText) {
+function processData() {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
     var lines = [];
