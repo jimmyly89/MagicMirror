@@ -9,8 +9,12 @@ $(document).ready(function() {
 
 var x = myFunction(4, 3);        // Function is called, return value will end up in x
 
+var y = function b() {
+	return 2
+}
+
 function myFunction(a, b) {
-    return a * b;                // Function returns the product of a and b
+    return a * b * y;                // Function returns the product of a and b
 }
 alert(x)
 
