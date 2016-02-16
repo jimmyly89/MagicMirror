@@ -30,6 +30,7 @@ $(document).ready(function() {
 				}
 		
 		}
+   alert(Lines)
    
 var compliments = {
 	complimentLocation: '.compliment',
