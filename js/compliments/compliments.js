@@ -13,7 +13,8 @@ function processData(alltext) {
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
         lines.push(data)  }
-    } alert(lines)
+    } 
+alert(lines)
    
 var compliments = {
 	complimentLocation: '.compliment',
