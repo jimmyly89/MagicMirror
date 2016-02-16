@@ -7,6 +7,16 @@ $(document).ready(function() {
      });
 });
 
+var str;
+var something;
+function a(){
+  str="first";
+}
+function b(){
+  var something = str +" second"; //new is reserved, use another variable name
+}
+alert(str)
+alert(something)
 
     var lines = [];
 function processData(alltext) {
@@ -26,7 +36,7 @@ function processData(alltext) {
         }  
     } 
 }  
-alert(lines);
+
    
 var compliments = {
 	complimentLocation: '.compliment',
