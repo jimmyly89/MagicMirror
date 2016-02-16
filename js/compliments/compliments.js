@@ -16,7 +16,7 @@ var test = function b(){
   return;
 }
 alert("random test")
-alert(test)
+alert(str)
 
     var lines = [];
 function processData(alltext) {
