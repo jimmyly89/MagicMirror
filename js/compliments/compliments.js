@@ -8,15 +8,14 @@ $(document).ready(function() {
 });
 
 var str;
-var something;
 function a(){
   str="first";
 }
-function b(){
+var test = function b(){
   var something = str +" second"; //new is reserved, use another variable name
 }
 alert("random test")
-alert(something)
+alert(test)
 
     var lines = [];
 function processData(alltext) {
