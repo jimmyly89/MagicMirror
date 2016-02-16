@@ -13,6 +13,7 @@ function a(){
 }
 var test = function b(){
   var something = str +" second"; //new is reserved, use another variable name
+  return;
 }
 alert("random test")
 alert(test)
