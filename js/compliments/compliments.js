@@ -7,36 +7,13 @@ $(document).ready(function() {
      });
 });
 
-var x = myFunction(4, 3);        // Function is called, return value will end up in x
-
-var y = function b() {
-	return 2
-}
-
-function myFunction(a, b) {
-    return a * b * y;                // Function returns the product of a and b
-}
-alert(x)
-
 function processData(alltext) {
     var allTextLines = allText.split(/\r\n|\n/);
-    var headers = allTextLines[0].split(',');
     var lines = [];
-
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
-        if (data.length == headers.length) {
-
-            var tarr = [];
-            for (var j=0; j<headers.length; j++) {
-                tarr.push(headers[j]+":"+data[j]);
-            }
-            lines.push(tarr);
-        }  
-    } 
-}  
-
-alert("test")
+        lines.push(data)  }
+    } alert(lines)
    
 var compliments = {
 	complimentLocation: '.compliment',
