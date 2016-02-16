@@ -7,7 +7,7 @@ $(document).ready(function() {
      });
 });
 
-var str = myVar;
+var str;
 var something;
 function a(){
   str="first";
@@ -15,7 +15,7 @@ function a(){
 function b(){
   var something = str +" second"; //new is reserved, use another variable name
 }
-alert(myVar)
+alert("random test")
 alert(something)
 
     var lines = [];
