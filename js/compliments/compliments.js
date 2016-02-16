@@ -7,15 +7,16 @@ $(document).ready(function() {
      });
 });
 
+var test = function b()
 var str;
 function a(){
   str="first";
 }
-var test = function b(){
-  var something = str +" second"; //new is reserved, use another variable name
-  return;
+
+function b(){
+  return str +" second"; //new is reserved, use another variable name
 }
-alert("random test")
+alert(test)
 alert(str)
 
     var lines = [];
