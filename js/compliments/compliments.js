@@ -7,17 +7,12 @@ $(document).ready(function() {
      });
 });
 
-var test = function b()
-var str;
-function a(){
-  str="first";
-}
+var x = myFunction(4, 3);        // Function is called, return value will end up in x
 
-function b(){
-  return str +" second"; //new is reserved, use another variable name
+function myFunction(a, b) {
+    return a * b;                // Function returns the product of a and b
 }
-alert(test)
-alert(str)
+alert(x)
 
     var lines = [];
 function processData(alltext) {
