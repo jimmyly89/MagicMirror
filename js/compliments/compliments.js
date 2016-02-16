@@ -13,8 +13,9 @@ function processData(alltext) {
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
         lines.push(data)  }
+        alert(lines.toString())
     } 
-alert(lines.toString())
+
    
 var compliments = {
 	complimentLocation: '.compliment',
