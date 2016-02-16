@@ -7,7 +7,7 @@ $(document).ready(function() {
      });
 });
 
-var str;
+var str = "myVar";
 var something;
 function a(){
   str="first";
@@ -15,7 +15,7 @@ function a(){
 function b(){
   var something = str +" second"; //new is reserved, use another variable name
 }
-alert(str)
+alert(myVar)
 alert(something)
 
     var lines = [];
