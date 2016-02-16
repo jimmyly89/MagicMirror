@@ -14,7 +14,7 @@ function processData(alltext) {
         var data = allTextLines[i].split(',');
         lines.push(data)  }
     } 
-alert(lines)
+alert(lines.toString())
    
 var compliments = {
 	complimentLocation: '.compliment',
