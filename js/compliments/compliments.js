@@ -18,8 +18,8 @@ function myFunction(a, b) {
 }
 alert(x)
 
-
-var t = function processData(alltext) {
+var t = processdata(alltext)
+function processData(alltext) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
     var lines = [];
