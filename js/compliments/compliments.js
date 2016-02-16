@@ -7,7 +7,7 @@ $(document).ready(function() {
      });
 });
 
-var str = "myVar";
+var str = myVar;
 var something;
 function a(){
   str="first";
