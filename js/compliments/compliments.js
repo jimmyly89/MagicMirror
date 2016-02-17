@@ -13,7 +13,7 @@ console.log(sliceline)
 });
 
 
-
+var tline = ["tt1", "tt2", "tt3"]
 
 
 function processData(allText) {
@@ -69,8 +69,8 @@ console.log(compliments.complimentList['evening'])
 		_list = compliments.complimentList['afternoon'].slice();
 	} else if (hour >= 17 || hour < 3) {
 		// Evening compliments
-		_list = compliments.complimentList['evening'].slice();
-		//
+		_list = tline.slice();
+		//compliments.complimentList['evening'].slice();
 	} else {
 		// Edge case in case something weird happens
 		// This will select a compliment from all times of day
