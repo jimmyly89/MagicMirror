@@ -30,7 +30,7 @@ function processData(allText) {
     } return allTextLines
 } 
  
-        	console.log(foo)
+        //	console.log(foo)
         	
 var compliments = {
 	complimentLocation: '.compliment',
@@ -48,7 +48,7 @@ var compliments = {
 /**
  * Changes the compliment visible on the screen
  */
-compliments.updateCompliment = function (foo) {
+compliments.updateCompliment = function () {
 
 console.log(compliments.complimentList['evening'])
 
@@ -95,9 +95,9 @@ console.log(_list)
 
 }
 
-compliments.init = foo(function (result) {
+compliments.init = function () {
 
-	this.updateCompliment(result);
+	this.updateCompliment();
 
 	this.intervalId = setInterval(function () {
 		this.updateCompliment();
