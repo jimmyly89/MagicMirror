@@ -33,10 +33,11 @@ function processData(allText) {
         //	console.log(foo)
 
 
-bar =	foo(function(test) {
+var bar =	foo(function(test) {
 	console.log(test);
 });
 
+console.log(bar)
 
 var compliments = {
 	complimentLocation: '.compliment',
