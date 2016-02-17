@@ -5,7 +5,7 @@ $(document).ready(function() {
         dataType: "text",
         success: function(data) {
         	var lines = processData(data);
-        	console.log(lines)}
+        	console.log(lines)
         }
      });
 });
