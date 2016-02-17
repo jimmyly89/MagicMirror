@@ -8,13 +8,14 @@ $(document).ready(function() {
         	console.log(lines)
         	var sliceline = [lines].slice();
 console.log(sliceline)
+console.log(allTextLines)
         }
      });
 });
 
 
 var tline = ["tt1", "tt2", "tt3"]
-console.log(alltext)
+
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
@@ -29,7 +30,7 @@ function processData(allText) {
             }
             lines.push(tarr);
         } 
-    } return lines
+    } return allTextLines
 } 
  
 
