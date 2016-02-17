@@ -51,7 +51,7 @@ var compliments = {
  */
 compliments.updateCompliment = function (a) {
 
-
+console.log(compliments.complimentList['evening'])
 
 	var _list = [];
 
