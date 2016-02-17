@@ -30,8 +30,7 @@ function processData(allText) {
     } return allTextLines
 } 
  
-        	var lines2 = processData(allText);
-        	console.log(lines2)
+        	console.log(foo)
         	
 var compliments = {
 	complimentLocation: '.compliment',
