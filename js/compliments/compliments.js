@@ -31,8 +31,7 @@ function processData(allText) {
 } 
  
         //	console.log(foo)
-        	var test = callback();
-console.log(test)
+
 
         	
 var compliments = {
@@ -46,6 +45,7 @@ var compliments = {
 	updateInterval: config.compliments.interval || 30000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
 	intervalId: null
+	
 };
 
 /**
