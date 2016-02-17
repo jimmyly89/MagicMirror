@@ -32,11 +32,12 @@ function processData(allText) {
  
         //	console.log(foo)
 
-foo(function(test)
-{
-	console.log(test)
-})
-        	
+function bar() {
+	foo(function(test) {
+	console.log(test);
+});
+}
+
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
