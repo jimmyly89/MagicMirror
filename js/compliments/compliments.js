@@ -8,11 +8,12 @@ $(document).ready(function(callback) {
         	console.log(data)
         	        	console.log(lines)
         	        	callback(lines)
+        	        	console.log(callback)
         }
      });
 });
 
-console.log(callback)
+
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
