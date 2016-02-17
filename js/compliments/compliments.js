@@ -76,7 +76,7 @@ console.log(compliments.complimentList['evening'])
 		_list = compliments.complimentList['afternoon'].slice();
 	} else if (hour >= 17 || hour < 3) {
 		// Evening compliments
-		_list = compliments.complimentList['evening'].slice();
+		_list = bar.slice();
 		//compliments.complimentList['evening'].slice();
 	} else {
 		// Edge case in case something weird happens
