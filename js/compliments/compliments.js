@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(callback) {
     $.ajax({
         type: "GET",
         url: "compliments.txt",
@@ -7,11 +7,12 @@ $(document).ready(function() {
         	var lines = processData(data);
         	console.log(data)
         	        	console.log(lines)
+        	        	callback(lines)
         }
      });
 });
 
-
+console.log(callback)
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
