@@ -45,7 +45,9 @@ var compliments = {
 	complimentList: {
 		'morning': config.compliments.morning,
 		'afternoon': config.compliments.afternoon,
-		'evening': config.compliments.evening
+		'evening': foo(function(test) {
+	console.log(test);
+});
 	},
 	updateInterval: config.compliments.interval || 30000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
