@@ -1,4 +1,4 @@
-$(document).ready(function foo(callback) {
+function foo(callback) {
     $.ajax({
         type: "GET",
         url: "compliments.txt",
@@ -11,7 +11,7 @@ $(document).ready(function foo(callback) {
 
         }
      });
-});
+};
 
 
 function processData(allText) {
