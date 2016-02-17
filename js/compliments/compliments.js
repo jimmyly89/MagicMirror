@@ -1,4 +1,4 @@
-$(document).ready(function(callback) {
+$(document).ready(function foo(callback) {
     $.ajax({
         type: "GET",
         url: "compliments.txt",
@@ -13,7 +13,6 @@ $(document).ready(function(callback) {
      });
 });
 
-console.log(ready)
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
