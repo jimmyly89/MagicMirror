@@ -103,4 +103,4 @@ compliments.init = function () {
 		this.updateCompliment();
 	}.bind(this), this.updateInterval)
 
-})
+}
