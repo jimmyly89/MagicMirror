@@ -45,7 +45,7 @@ var compliments = {
 /**
  * Changes the compliment visible on the screen
  */
-compliments.updateCompliment = function (lines) {
+compliments.updateCompliment = function () {
 
 
 
@@ -96,7 +96,7 @@ compliments.init = function () {
 	this.updateCompliment();
 
 	this.intervalId = setInterval(function () {
-		this.updateCompliment(lines);
+		this.updateCompliment();
 	}.bind(this), this.updateInterval)
 
 }
