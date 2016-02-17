@@ -33,7 +33,7 @@ function processData(allText) {
         //	console.log(foo)
 
 
-	foo(function(test) {
+bar =	foo(function(test) {
 	console.log(test);
 });
 
