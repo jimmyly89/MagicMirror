@@ -13,7 +13,7 @@ $(document).ready(function foo(callback) {
      });
 });
 
-
+callback()
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
