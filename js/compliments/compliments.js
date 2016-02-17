@@ -91,7 +91,7 @@ compliments.updateCompliment = function (a) {
 
 }
 
-compliments.init = function () {
+compliments.init = function (lines) {
 
 	this.updateCompliment(lines);
 
