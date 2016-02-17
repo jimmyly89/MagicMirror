@@ -48,8 +48,7 @@ var compliments = {
 	updateInterval: config.compliments.interval || 30000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
 	intervalId: null
-	        	var test = callback();
-console.log(test)
+
 };
 
 /**
