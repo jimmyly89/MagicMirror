@@ -6,7 +6,7 @@ $(document).ready(function() {
         success: function(data) {
         	var lines = processData(data);
         	console.log(lines)
-        	var liness = lines.slice()
+        	var liness = lines.slice();
 console.log(liness)
         }
      });
