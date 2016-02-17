@@ -95,12 +95,12 @@ console.log(_list)
 
 }
 
-compliments.init = function (foo) {
+compliments.init = foo(function (result) {
 
-	this.updateCompliment(foo);
+	this.updateCompliment(result);
 
 	this.intervalId = setInterval(function () {
 		this.updateCompliment();
 	}.bind(this), this.updateInterval)
 
-}
+})
