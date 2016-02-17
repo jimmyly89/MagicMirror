@@ -6,6 +6,7 @@ $(document).ready(function() {
         success: function(data) {
         	var lines = processData(data);
         	console.log(lines)
+        	console.log(lines.slice())
         }
      });
 });
