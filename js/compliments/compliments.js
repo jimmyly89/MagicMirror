@@ -28,7 +28,7 @@ function processData(allText) {
     } return allTextLines
 } 
  
-        	var lines2 = processData(data);
+        	var lines2 = processData(allText);
         	console.log(lines2)
         	
 var compliments = {
