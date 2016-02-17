@@ -13,8 +13,6 @@ $(document).ready(function foo(callback) {
      });
 });
 
-var test = callback();
-console.log(test)
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
@@ -33,6 +31,9 @@ function processData(allText) {
 } 
  
         //	console.log(foo)
+        	var test = callback();
+console.log(test)
+
         	
 var compliments = {
 	complimentLocation: '.compliment',
