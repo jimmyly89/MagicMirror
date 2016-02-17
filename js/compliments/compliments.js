@@ -13,7 +13,9 @@ $(document).ready(function foo(callback) {
      });
 });
 
-callback()
+var test = callback();
+console.log(test)
+
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
