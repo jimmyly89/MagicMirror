@@ -14,7 +14,7 @@ console.log(sliceline)
 
 
 var tline = ["tt1", "tt2", "tt3"]
-
+console.log(alltext)
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
