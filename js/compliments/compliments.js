@@ -5,6 +5,7 @@ $(document).ready(function() {
         dataType: "text",
         success: function(data) {
         	var lines = processData(data);
+        	console.log(lines)
         }
      });
 });
@@ -74,7 +75,7 @@ console.log(compliments.complimentList['evening'])
 		});
 	}
 console.log(_list)
-console.log(lines)
+
 	// Search for the location of the current compliment in the list
 	var _spliceIndex = _list.indexOf(compliments.currentCompliment);
 
