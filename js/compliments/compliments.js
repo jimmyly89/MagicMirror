@@ -74,7 +74,7 @@ compliments.updateCompliment = function (a) {
 			_list = _list.concat(compliments.complimentList[_curr]).slice();
 		});
 	}
-
+console.log(_list)
 	// Search for the location of the current compliment in the list
 	var _spliceIndex = _list.indexOf(compliments.currentCompliment);
 
