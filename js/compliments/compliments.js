@@ -3,12 +3,32 @@ $(document).ready(function() {
         type: "GET",
         url: "compliments.txt",
         dataType: "text",
-        success: function(data) {processData(data);}
+        success: function(data) {
+        	var lines = processData(data);
+        	console.log(lines)}
+        }
      });
 });
 
 
-   
+
+function processData(allText) {
+    var allTextLines = allText.split(/\r\n|\n/);
+    var headers = allTextLines[0].split(',');
+                var lines =[] ;
+    for (var i=1; i<allTextLines.length; i++) {
+        var data = allTextLines[i].split(',');
+        if (data.length == headers.length) {
+            var tarr = [];
+            for (var j=0; j<headers.length; j++) {
+                tarr.push(headers[j]+":"+data[j]);
+            }
+            lines.push(tarr);
+        } 
+    } return lines
+} 
+ 
+
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
@@ -25,7 +45,7 @@ var compliments = {
 /**
  * Changes the compliment visible on the screen
  */
-compliments.updateCompliment = function () {
+compliments.updateCompliment = function (lines) {
 
 
 
@@ -45,7 +65,7 @@ compliments.updateCompliment = function () {
 		_list = compliments.complimentList['afternoon'].slice();
 	} else if (hour >= 17 || hour < 3) {
 		// Evening compliments
-		_list = ['test1', 'test2']//.slice();
+		_list = lines//.slice();
 		//compliments.complimentList['evening'].slice();
 	} else {
 		// Edge case in case something weird happens
@@ -76,7 +96,7 @@ compliments.init = function () {
 	this.updateCompliment();
 
 	this.intervalId = setInterval(function () {
-		this.updateCompliment();
+		this.updateCompliment(lines);
 	}.bind(this), this.updateInterval)
 
 }
