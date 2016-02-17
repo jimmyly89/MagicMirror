@@ -28,7 +28,9 @@ function processData(allText) {
     } return allTextLines
 } 
  
-
+        	var lines2 = processData(data);
+        	console.log(lines2)
+        	
 var compliments = {
 	complimentLocation: '.compliment',
 	currentCompliment: '',
