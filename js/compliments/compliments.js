@@ -45,7 +45,7 @@ var compliments = {
 /**
  * Changes the compliment visible on the screen
  */
-compliments.updateCompliment = function () {
+compliments.updateCompliment = function (a) {
 
 
 
@@ -65,7 +65,7 @@ compliments.updateCompliment = function () {
 		_list = compliments.complimentList['afternoon'].slice();
 	} else if (hour >= 17 || hour < 3) {
 		// Evening compliments
-		_list = lines//.slice();
+		_list = a//.slice();
 		//compliments.complimentList['evening'].slice();
 	} else {
 		// Edge case in case something weird happens
@@ -93,10 +93,10 @@ compliments.updateCompliment = function () {
 
 compliments.init = function () {
 
-	this.updateCompliment();
+	this.updateCompliment(lines);
 
 	this.intervalId = setInterval(function () {
-		this.updateCompliment();
+		this.updateCompliment(lines);
 	}.bind(this), this.updateInterval)
 
 }
