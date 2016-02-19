@@ -35,7 +35,7 @@ function processData(allText) {
 
 
 
-console.log(bar)
+
 
 var compliments = {
 	complimentLocation: '.compliment',
