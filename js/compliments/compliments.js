@@ -43,7 +43,7 @@ var compliments = {
 	complimentList: {
 		'morning': config.compliments.morning,
 		'afternoon': config.compliments.afternoon,
-		'evening': foo()
+		'evening': foo(callback)
 	},
 	updateInterval: config.compliments.interval || 30000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
