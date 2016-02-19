@@ -1,4 +1,4 @@
-function foo(callback) {
+var foo = function foo(callback) {
     $.ajax({
         type: "GET",
         url: "compliments.txt",
@@ -33,9 +33,7 @@ function processData(allText) {
         //	console.log(foo)
 
 
-var bar =	foo(function(test) {
-	console.log(test);
-});
+
 
 console.log(bar)
 
